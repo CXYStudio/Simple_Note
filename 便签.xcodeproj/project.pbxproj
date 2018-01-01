@@ -15,6 +15,8 @@
 		1E7141851E0019670072AA66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E7141831E0019670072AA66 /* LaunchScreen.storyboard */; };
 		1E7141901E0019670072AA66 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E71418F1E0019670072AA66 /* __Tests.m */; };
 		1E71419B1E0019670072AA66 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E71419A1E0019670072AA66 /* __UITests.m */; };
+		1E7141AA1E0033040072AA66 /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7141A91E0033040072AA66 /* AddNewViewController.m */; };
+		1E7141AD1E0033250072AA66 /* ExistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7141AC1E0033250072AA66 /* ExistViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		1E7141961E0019670072AA66 /* 便签UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "便签UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E71419A1E0019670072AA66 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		1E71419C1E0019670072AA66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E7141A81E0033040072AA66 /* AddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewViewController.h; sourceTree = "<group>"; };
+		1E7141A91E0033040072AA66 /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
+		1E7141AB1E0033250072AA66 /* ExistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistViewController.h; sourceTree = "<group>"; };
+		1E7141AC1E0033250072AA66 /* ExistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				1E7141791E0019670072AA66 /* AppDelegate.m */,
 				1E71417B1E0019670072AA66 /* ViewController.h */,
 				1E71417C1E0019670072AA66 /* ViewController.m */,
+				1E7141A81E0033040072AA66 /* AddNewViewController.h */,
+				1E7141A91E0033040072AA66 /* AddNewViewController.m */,
+				1E7141AB1E0033250072AA66 /* ExistViewController.h */,
+				1E7141AC1E0033250072AA66 /* ExistViewController.m */,
 				1E71417E1E0019670072AA66 /* Main.storyboard */,
 				1E7141811E0019670072AA66 /* Assets.xcassets */,
 				1E7141831E0019670072AA66 /* LaunchScreen.storyboard */,
@@ -202,11 +212,15 @@
 		1E71416A1E0019670072AA66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					table123,
+				);
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "曹修远";
 				TargetAttributes = {
 					1E7141711E0019670072AA66 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = ZZHCQZ2PG3;
 						ProvisioningStyle = Automatic;
 					};
 					1E71418A1E0019670072AA66 = {
@@ -276,6 +290,8 @@
 				1E71417D1E0019670072AA66 /* ViewController.m in Sources */,
 				1E71417A1E0019670072AA66 /* AppDelegate.m in Sources */,
 				1E7141771E0019670072AA66 /* main.m in Sources */,
+				1E7141AD1E0033250072AA66 /* ExistViewController.m in Sources */,
+				1E7141AA1E0033040072AA66 /* AddNewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +440,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZHCQZ2PG3;
 				INFOPLIST_FILE = "便签/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.--";
+				PRODUCT_BUNDLE_IDENTIFIER = cxy1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,9 +452,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZHCQZ2PG3;
 				INFOPLIST_FILE = "便签/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.--";
+				PRODUCT_BUNDLE_IDENTIFIER = cxy1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -507,6 +525,7 @@
 				1E7141A11E0019670072AA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E7141A21E0019670072AA66 /* Build configuration list for PBXNativeTarget "便签Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +534,7 @@
 				1E7141A41E0019670072AA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E7141A51E0019670072AA66 /* Build configuration list for PBXNativeTarget "便签UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +543,7 @@
 				1E7141A71E0019670072AA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
